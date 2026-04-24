@@ -1,1 +1,11 @@
-/ecoprius-platform.zip
+.DS_Store
+Thumbs.db
+*.log
+node_modules/
+.vscode/
+.idea/
+*.swp
+
+# Local SWA CLI
+.swa/
+swa-cli.config.json
