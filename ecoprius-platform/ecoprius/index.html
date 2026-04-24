@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="page-file" content="index.html" />
+  <title>ECOPRIUS — Energy Systems Operations Center</title>
+  <meta name="description" content="ECOPRIUS — engineering and analytics platform for the energy transition. Six industrial programmes from green hydrogen to rare-earth magnets, unified in one operations center." />
+  <meta property="og:title" content="ECOPRIUS Energy Systems" />
+  <meta property="og:description" content="Six industrial programmes. One operations center." />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="/assets/styles.css" />
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+</head>
+<body>
+
+  <!-- =================== TOPBAR =================== -->
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a href="/" data-route class="brand">
+        <div class="brand-mark"><span>E</span></div>
+        <div class="brand-text">
+          <div class="n">ECOPRIUS</div>
+          <div class="s">OPERATIONS CENTER · v2.4</div>
+        </div>
+      </a>
+      <nav class="top-nav">
+        <span class="status"><span class="dot"></span>SYSTEM ONLINE</span>
+        <span class="clock" id="clock">--:--:-- UTC</span>
+        <a href="/" data-route>Programmes</a>
+        <a href="https://ecoprius.com/en/concepts">Concepts</a>
+        <a href="/#investors">Investors</a>
+        <a href="/.auth/login/aad" class="cta-btn">SIGN IN →</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- =================== META ROW =================== -->
+    <div class="meta-row fade-in">
+      <span class="bar"></span>
+      <span class="label">SYS // ECOPRIUS · OVERVIEW</span>
+      <span class="rhs">SCAN · 2026-Q2 · REGION EU-WEST</span>
+    </div>
+
+    <!-- =================== PAGE HEADER =================== -->
+    <div class="page-header fade-up d-1">
+      <h1>
+        Six industrial programmes.<br />
+        <em>One operations center.</em>
+      </h1>
+      <p>
+        ECOPRIUS unifies engineering, decarbonization and investment analytics across the
+        energy transition stack — live process telemetry, financial models and intelligence
+        under one authenticated entry point.
+      </p>
+    </div>
+
+    <!-- =================== PANORAMA CONTROL WALL =================== -->
+    <section class="panorama fade-up d-2" aria-label="Live operations panorama">
+
+      <!-- organic flow lines in the background -->
+      <svg class="pan-flow" viewBox="0 0 1400 500" preserveAspectRatio="none" aria-hidden="true">
+        <defs>
+          <linearGradient id="flow1" x1="0" x2="1">
+            <stop offset="0" stop-color="#ffffff" stop-opacity="0" />
+            <stop offset="0.5" stop-color="#ffffff" stop-opacity="0.35" />
+            <stop offset="1" stop-color="#ffffff" stop-opacity="0" />
+          </linearGradient>
+        </defs>
+        <path d="M-100 120 Q 300 80, 700 140 T 1500 180" fill="none" stroke="url(#flow1)" stroke-width="1" />
+        <path d="M-100 200 Q 400 160, 800 220 T 1500 260" fill="none" stroke="url(#flow1)" stroke-width="1" />
+        <path d="M-100 310 Q 350 260, 700 340 T 1500 380" fill="none" stroke="url(#flow1)" stroke-width="0.7" />
+        <path d="M-100 420 Q 500 380, 900 440 T 1500 470" fill="none" stroke="url(#flow1)" stroke-width="0.7" />
+      </svg>
+
+      <div class="pan-bggrid" aria-hidden="true"></div>
+
+      <div class="pan-header">
+        <span class="tag">LIVE OPERATIONS · ECOPRIUS PORTFOLIO</span>
+        <div class="kpis">
+          <span>CAPACITY <b>50 MW</b></span>
+          <span>UPTIME <b>99.94%</b></span>
+          <span>PRODUCTION <b>6.57 MkG/Y</b></span>
+          <span>CO₂ AVOIDED <b>11.3 kt/Y</b></span>
+        </div>
+      </div>
+
+      <div class="pan-grid-3">
+
+        <!-- ---------------- LEFT · MAP ---------------- -->
+        <div class="map-panel">
+          <div class="panel-title">01 · SITE GEOGRAPHY</div>
+          <div class="map-canvas">
+            <svg viewBox="0 0 300 300" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Site geography — Europe">
+              <path d="M 60 80 L 90 60 L 130 55 L 170 50 L 200 65 L 230 80 L 240 110 L 250 140 L 235 170 L 210 190 L 195 220 L 170 240 L 140 245 L 110 235 L 85 215 L 70 185 L 55 155 L 50 120 Z"
+                    fill="rgba(34, 211, 238, 0.06)" stroke="#22d3ee" stroke-width="0.7" opacity="0.65"/>
+              <g stroke="#22d3ee" stroke-width="0.3" fill="none" opacity="0.3">
+                <path d="M 130 85 L 160 90 L 175 120 L 155 145 L 125 140 Z" />
+                <path d="M 100 110 L 130 115 L 125 145 L 95 150 Z" />
+                <path d="M 165 95 L 200 100 L 210 135 L 180 145 Z" />
+                <path d="M 90 160 L 125 165 L 140 195 L 110 210 Z" />
+              </g>
+              <g transform="translate(115, 170)">
+                <circle r="14" fill="none" stroke="#22d3ee" stroke-width="0.5" opacity="0.35">
+                  <animate attributeName="r" from="6" to="22" dur="2.5s" repeatCount="indefinite" />
+                  <animate attributeName="opacity" from="0.8" to="0" dur="2.5s" repeatCount="indefinite" />
+                </circle>
+                <circle r="5" fill="#22d3ee" />
+                <circle r="2.5" fill="#ffffff" />
+                <text x="10" y="3" fill="#22d3ee" font-family="IBM Plex Mono, monospace" font-size="7" font-weight="600">H2 HUB · 50 MW</text>
+                <text x="10" y="13" fill="#4ade80" font-family="IBM Plex Mono, monospace" font-size="5.5">● LIVE</text>
+              </g>
+              <g fill="#fbbf24">
+                <circle cx="170" cy="140" r="2.5" />
+                <text x="175" y="143" fill="#fbbf24" font-family="IBM Plex Mono, monospace" font-size="5.5">PRJ-02 · DC</text>
+              </g>
+              <g fill="rgba(232, 240, 255, 0.4)">
+                <circle cx="145" cy="105" r="2" />
+                <circle cx="195" cy="170" r="2" />
+                <circle cx="90" cy="195" r="2" />
+                <circle cx="200" cy="115" r="2" />
+              </g>
+              <text x="10" y="15" fill="rgba(232,240,255,0.4)" font-family="IBM Plex Mono, monospace" font-size="6">LAT 52.3°N</text>
+              <text x="10" y="292" fill="rgba(232,240,255,0.4)" font-family="IBM Plex Mono, monospace" font-size="6">LON 4.8°E · AMS</text>
+              <text x="290" y="292" text-anchor="end" fill="rgba(232,240,255,0.4)" font-family="IBM Plex Mono, monospace" font-size="6">6 SITES</text>
+            </svg>
+          </div>
+        </div>
+
+        <!-- ---------------- CENTER · P&ID ---------------- -->
+        <div class="pid-panel">
+          <div class="panel-title">02 · H2 HUB · LIVE PROCESS · PRJ-01</div>
+          <div class="pid-canvas">
+            <svg viewBox="0 0 500 380" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Process diagram — H2 HUB">
+              <defs>
+                <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+                  <feGaussianBlur stdDeviation="2" result="b" />
+                  <feMerge><feMergeNode in="b" /><feMergeNode in="SourceGraphic" /></feMerge>
+                </filter>
+                <pattern id="pidgrid" width="20" height="20" patternUnits="userSpaceOnUse">
+                  <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#22d3ee" stroke-width="0.15" opacity="0.5" />
+                </pattern>
+              </defs>
+              <rect width="500" height="380" fill="url(#pidgrid)" />
+
+              <!-- pipes -->
+              <g fill="none" stroke="#22d3ee" stroke-width="0.8" opacity="0.7">
+                <path d="M 30 100 L 130 100" />
+                <path d="M 190 100 L 240 100 L 240 160" />
+                <path d="M 300 200 L 360 200" />
+                <path d="M 420 200 L 470 200 L 470 300 L 60 300 L 60 250" />
+                <path d="M 240 230 L 240 270 L 300 270" />
+              </g>
+
+              <!-- flowing particles -->
+              <g fill="#22d3ee" filter="url(#glow)">
+                <circle r="2.2" cx="30" cy="100">
+                  <animate attributeName="cx" values="30;130" dur="2s" repeatCount="indefinite" />
+                  <animate attributeName="opacity" values="0;1;0" dur="2s" repeatCount="indefinite" />
+                </circle>
+                <circle r="2.2" cx="130" cy="100">
+                  <animate attributeName="cx" values="30;130" dur="2s" begin="0.6s" repeatCount="indefinite" />
+                  <animate attributeName="opacity" values="0;1;0" dur="2s" begin="0.6s" repeatCount="indefinite" />
+                </circle>
+                <circle r="2.2" cx="190" cy="100">
+                  <animate attributeName="cx" values="190;240" dur="1.4s" repeatCount="indefinite" />
+                  <animate attributeName="opacity" values="0;1;0" dur="1.4s" repeatCount="indefinite" />
+                </circle>
+              </g>
+              <g fill="#4ade80" filter="url(#glow)">
+                <circle r="2.5" cx="300" cy="200">
+                  <animate attributeName="cx" values="300;420" dur="2s" repeatCount="indefinite" />
+                  <animate attributeName="opacity" values="0;1;0" dur="2s" repeatCount="indefinite" />
+                </circle>
+                <circle r="2.5" cx="420" cy="200">
+                  <animate attributeName="cx" values="300;420" dur="2s" begin="0.7s" repeatCount="indefinite" />
+                  <animate attributeName="opacity" values="0;1;0" dur="2s" begin="0.7s" repeatCount="indefinite" />
+                </circle>
+                <circle r="2.5" cx="470" cy="230">
+                  <animate attributeName="cy" values="200;300" dur="1.4s" repeatCount="indefinite" />
+                  <animate attributeName="opacity" values="0;1;0" dur="1.4s" repeatCount="indefinite" />
+                </circle>
+              </g>
+
+              <!-- nodes -->
+              <g>
+                <rect x="20" y="80" width="110" height="42" fill="#0a2a5c" stroke="#22d3ee" stroke-width="0.7" />
+                <text x="75" y="97" text-anchor="middle" fill="#22d3ee" font-family="IBM Plex Mono, monospace" font-size="8" font-weight="600">GRID INPUT</text>
+                <text x="75" y="112" text-anchor="middle" fill="#e8f0ff" font-family="IBM Plex Mono, monospace" font-size="10" font-weight="600">52.3 MW</text>
+                <circle cx="124" cy="87" r="2.2" fill="#4ade80">
+                  <animate attributeName="opacity" values="1;0.3;1" dur="1.5s" repeatCount="indefinite" />
+                </circle>
+              </g>
+
+              <g>
+                <rect x="130" y="80" width="60" height="42" fill="#061a3d" stroke="#22d3ee" stroke-width="0.6" />
+                <text x="160" y="97" text-anchor="middle" fill="rgba(232,240,255,0.7)" font-family="IBM Plex Mono, monospace" font-size="7">RECTIFIER</text>
+                <text x="160" y="112" text-anchor="middle" fill="#e8f0ff" font-family="IBM Plex Mono, monospace" font-size="9">η 96.2%</text>
+              </g>
+
+              <g>
+                <rect x="190" y="160" width="100" height="90" fill="#061a3d" stroke="#22d3ee" stroke-width="1.2" filter="url(#glow)" />
+                <g stroke="#22d3ee" stroke-width="0.4" opacity="0.65">
+                  <line x1="200" y1="172" x2="200" y2="238" />
+                  <line x1="212" y1="172" x2="212" y2="238" />
+                  <line x1="224" y1="172" x2="224" y2="238" />
+                  <line x1="236" y1="172" x2="236" y2="238" />
+                  <line x1="248" y1="172" x2="248" y2="238" />
+                  <line x1="260" y1="172" x2="260" y2="238" />
+                  <line x1="272" y1="172" x2="272" y2="238" />
+                </g>
+                <text x="240" y="186" text-anchor="middle" fill="#22d3ee" font-family="IBM Plex Mono, monospace" font-size="8" font-weight="600">PEM ELECTROLYZER</text>
+                <text x="240" y="215" text-anchor="middle" fill="#ffffff" font-family="IBM Plex Mono, monospace" font-size="14" font-weight="600">37.5 MW</text>
+                <circle cx="282" cy="168" r="2.5" fill="#4ade80">
+                  <animate attributeName="opacity" values="1;0.3;1" dur="1.2s" repeatCount="indefinite" />
+                </circle>
+                <text x="240" y="245" text-anchor="middle" fill="rgba(232,240,255,0.55)" font-family="IBM Plex Mono, monospace" font-size="6">80°C · 30 bar · stack A+B+C</text>
+              </g>
+
+              <g>
+                <rect x="300" y="180" width="60" height="42" fill="#061a3d" stroke="#4ade80" stroke-width="0.7" />
+                <text x="330" y="196" text-anchor="middle" fill="#4ade80" font-family="IBM Plex Mono, monospace" font-size="7" font-weight="500">H₂ DRYER</text>
+                <text x="330" y="211" text-anchor="middle" fill="#e8f0ff" font-family="IBM Plex Mono, monospace" font-size="9">99.97%</text>
+              </g>
+
+              <g>
+                <rect x="360" y="170" width="60" height="62" fill="#061a3d" stroke="#4ade80" stroke-width="0.9" />
+                <g stroke="#4ade80" stroke-width="0.3" opacity="0.55">
+                  <line x1="370" y1="182" x2="370" y2="222" />
+                  <line x1="382" y1="182" x2="382" y2="222" />
+                  <line x1="394" y1="182" x2="394" y2="222" />
+                  <line x1="406" y1="182" x2="406" y2="222" />
+                </g>
+                <text x="390" y="196" text-anchor="middle" fill="#4ade80" font-family="IBM Plex Mono, monospace" font-size="7" font-weight="500">COMPRESS</text>
+                <text x="390" y="211" text-anchor="middle" fill="#e8f0ff" font-family="IBM Plex Mono, monospace" font-size="9">700 bar</text>
+                <circle cx="414" cy="178" r="2" fill="#fbbf24">
+                  <animate attributeName="opacity" values="1;0.3;1" dur="1.8s" repeatCount="indefinite" />
+                </circle>
+              </g>
+
+              <g>
+                <rect x="20" y="230" width="90" height="52" fill="#061a3d" stroke="#22d3ee" stroke-width="0.6" />
+                <text x="65" y="248" text-anchor="middle" fill="#22d3ee" font-family="IBM Plex Mono, monospace" font-size="7" font-weight="500">O₂ STORAGE</text>
+                <text x="65" y="263" text-anchor="middle" fill="#e8f0ff" font-family="IBM Plex Mono, monospace" font-size="10">2,840 kg</text>
+                <text x="65" y="275" text-anchor="middle" fill="rgba(232,240,255,0.5)" font-family="IBM Plex Mono, monospace" font-size="5.5">VENTED</text>
+              </g>
+
+              <g>
+                <rect x="300" y="258" width="90" height="52" fill="#061a3d" stroke="#fbbf24" stroke-width="0.6" />
+                <text x="345" y="276" text-anchor="middle" fill="#fbbf24" font-family="IBM Plex Mono, monospace" font-size="7" font-weight="500">CGH₂ FLEET</text>
+                <text x="345" y="291" text-anchor="middle" fill="#e8f0ff" font-family="IBM Plex Mono, monospace" font-size="10">1.97 M kg/y</text>
+                <text x="345" y="303" text-anchor="middle" fill="rgba(232,240,255,0.5)" font-family="IBM Plex Mono, monospace" font-size="5.5">120 VEHICLES · 700 BAR</text>
+              </g>
+
+              <g>
+                <rect x="395" y="258" width="90" height="52" fill="#061a3d" stroke="#4ade80" stroke-width="0.6" />
+                <text x="440" y="276" text-anchor="middle" fill="#4ade80" font-family="IBM Plex Mono, monospace" font-size="7" font-weight="500">LH₂ TRUCKS</text>
+                <text x="440" y="291" text-anchor="middle" fill="#e8f0ff" font-family="IBM Plex Mono, monospace" font-size="10">4.60 M kg/y</text>
+                <text x="440" y="303" text-anchor="middle" fill="rgba(232,240,255,0.5)" font-family="IBM Plex Mono, monospace" font-size="5.5">110 HD · LIQUEFIED</text>
+              </g>
+
+              <g font-family="IBM Plex Mono, monospace" font-size="6" fill="rgba(255,255,255,0.25)">
+                <text x="20" y="345">TAG.0001</text>
+                <text x="80" y="345">TAG.0247</text>
+                <text x="180" y="345">TAG.0411</text>
+                <text x="280" y="345">TAG.0823</text>
+                <text x="380" y="345">TAG.1102</text>
+                <text x="450" y="345">TAG.1247</text>
+              </g>
+              <g font-family="IBM Plex Mono, monospace" font-size="6" fill="rgba(34, 211, 238, 0.45)">
+                <text x="20" y="358">FLOW 6.57 M kg/yr</text>
+                <text x="200" y="358">EFF 69.4%</text>
+                <text x="290" y="358">LOSS 2.1%</text>
+                <text x="380" y="358">CO₂ AVOIDED 11.3 kt/yr</text>
+              </g>
+            </svg>
+          </div>
+        </div>
+
+        <!-- ---------------- RIGHT · KPI ---------------- -->
+        <div class="kpi-panel">
+          <div class="panel-title">03 · KPI · FINANCIAL / OPS</div>
+          <div class="kpi-stack">
+            <div class="kpi-row">
+              <span class="k">IRR</span>
+              <span class="v ok">31.2%</span>
+              <div class="spark">
+                <span style="height: 30%"></span><span style="height: 42%"></span>
+                <span style="height: 55%"></span><span style="height: 48%"></span>
+                <span style="height: 68%"></span><span style="height: 75%"></span>
+                <span style="height: 82%"></span><span style="height: 88%"></span>
+              </div>
+            </div>
+            <div class="kpi-row">
+              <span class="k">NPV</span>
+              <span class="v cyan">+€360M</span>
+              <div class="spark">
+                <span style="height: 25%"></span><span style="height: 38%"></span>
+                <span style="height: 45%"></span><span style="height: 58%"></span>
+                <span style="height: 65%"></span><span style="height: 72%"></span>
+                <span style="height: 80%"></span><span style="height: 92%"></span>
+              </div>
+            </div>
+            <div class="kpi-row">
+              <span class="k">PAYBACK</span>
+              <span class="v">4.79 y</span>
+            </div>
+            <div class="kpi-row">
+              <span class="k">CAPEX</span>
+              <span class="v">€330M</span>
+              <div class="spark amber">
+                <span style="height: 90%"></span><span style="height: 80%"></span>
+                <span style="height: 72%"></span><span style="height: 65%"></span>
+                <span style="height: 55%"></span><span style="height: 45%"></span>
+                <span style="height: 35%"></span><span style="height: 28%"></span>
+              </div>
+            </div>
+            <div class="kpi-row">
+              <span class="k">EU GRANTS</span>
+              <span class="v amber">€205M</span>
+            </div>
+            <div class="kpi-row">
+              <span class="k">OPEX / kg</span>
+              <span class="v">€0.74</span>
+            </div>
+            <div class="kpi-row">
+              <span class="k">LCOH</span>
+              <span class="v cyan">€3.12 /kg</span>
+              <div class="spark">
+                <span style="height: 80%"></span><span style="height: 72%"></span>
+                <span style="height: 68%"></span><span style="height: 62%"></span>
+                <span style="height: 58%"></span><span style="height: 52%"></span>
+                <span style="height: 48%"></span><span style="height: 44%"></span>
+              </div>
+            </div>
+            <div class="kpi-row">
+              <span class="k">CO₂ / ETS</span>
+              <span class="v amber">€100/t</span>
+            </div>
+            <div class="kpi-row">
+              <span class="k">OFFTAKE</span>
+              <span class="v ok">96% SECURED</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <div class="pan-glow" aria-hidden="true"></div>
+
+    <!-- =================== HERO ACTIONS =================== -->
+    <div class="hero-actions fade-up d-3">
+      <a href="/h2hub" data-route class="btn-primary">ENTER H2 HUB →</a>
+      <a href="#programmes" class="btn-ghost">All programmes</a>
+      <div class="hero-stats">
+        <div class="stat"><div class="v">06</div><div class="l">PROGRAMMES</div></div>
+        <div class="stat"><div class="v">18</div><div class="l">DASHBOARDS</div></div>
+        <div class="stat"><div class="v white">50<span class="u">MW</span></div><div class="l">FIRST PROJECT</div></div>
+        <div class="stat"><div class="v amber">€205M</div><div class="l">EU GRANTS</div></div>
+      </div>
+    </div>
+
+    <!-- =================== PROGRAMME REGISTRY =================== -->
+    <section id="programmes" class="section" aria-labelledby="programmes-heading">
+      <div class="section-head" data-reveal>
+        <span class="bar"></span>
+        <span class="label" id="programmes-heading">01 // PROGRAMME REGISTRY</span>
+        <span class="rhs">06 ACTIVE · 18 DASHBOARDS</span>
+      </div>
+
+      <div class="cards stagger">
+
+        <a href="/h2hub" data-route class="card active">
+          <div class="card-status live"><span class="dot"></span>LIVE</div>
+          <div class="card-id">PRJ · 01 / H₂</div>
+          <h3>H2 HUB</h3>
+          <div class="sub">GREEN HYDROGEN · PORT</div>
+          <p>50 MW green hydrogen production at a major European deep-sea port. Investment-grade with secured offtake from 110 trucks and 120 port vehicles.</p>
+          <div class="card-data">
+            <span class="k">Capacity</span><span class="v">50 MW</span>
+            <span class="k">Dashboards</span><span class="v">04</span>
+            <span class="k">IRR</span><span class="v ok">31.2%</span>
+            <span class="k">Status</span><span class="v ok">Shovel-ready</span>
+          </div>
+          <div class="card-enter">ENTER PROGRAMME →</div>
+        </a>
+
+        <a href="/power-grid" data-route class="card">
+          <div class="card-status build"><span class="dot"></span>IN BUILD</div>
+          <div class="card-id">PRJ · 02 / DC</div>
+          <h3>Power Grid</h3>
+          <div class="sub">DATA CENTER SUPPLY</div>
+          <p>Behind-the-meter baseload power for hyperscale data centers. Capacity allocation, grid-balancing and yield modelling for gigawatt-class loads.</p>
+          <div class="card-data">
+            <span class="k">Capacity</span><span class="v">— MW</span>
+            <span class="k">Dashboards</span><span class="v">03</span>
+            <span class="k">Phase</span><span class="v warn">Design</span>
+            <span class="k">Target offtake</span><span class="v">&gt;500 MW</span>
+          </div>
+          <div class="card-enter">ENTER PROGRAMME →</div>
+        </a>
+
+        <a href="/carbon-loop" data-route class="card concept">
+          <div class="card-status concept"><span class="dot"></span>CONCEPT</div>
+          <div class="card-id">PRJ · 03 / DAC</div>
+          <h3>Carbon Loop</h3>
+          <div class="sub">DAC + CO₂ UTILISATION</div>
+          <p>Direct Air Capture and CO₂ utilisation. Removal credits, geological sequestration and feedstock supply for e-fuel synthesis.</p>
+          <div class="card-data">
+            <span class="k">Capacity</span><span class="v">— kt/yr</span>
+            <span class="k">Dashboards</span><span class="v">03</span>
+            <span class="k">Phase</span><span class="v">Scoping</span>
+            <span class="k">Coupling</span><span class="v">PRJ-06</span>
+          </div>
+          <div class="card-enter">ENTER PROGRAMME →</div>
+        </a>
+
+        <a href="/green-steel" data-route class="card concept">
+          <div class="card-status concept"><span class="dot"></span>CONCEPT</div>
+          <div class="card-id">PRJ · 04 / GS</div>
+          <h3>Green Steel</h3>
+          <div class="sub">H₂-DRI · DECARBONIZED STEEL</div>
+          <p>Hydrogen-based direct reduced iron (H₂-DRI). Decarbonized steel for European industrial offtakers exposed to CBAM.</p>
+          <div class="card-data">
+            <span class="k">Output</span><span class="v">— Mt/yr</span>
+            <span class="k">Dashboards</span><span class="v">03</span>
+            <span class="k">CBAM exposure</span><span class="v ok">High</span>
+            <span class="k">H₂ demand</span><span class="v">55 kg/t</span>
+          </div>
+          <div class="card-enter">ENTER PROGRAMME →</div>
+        </a>
+
+        <a href="/rare-metals" data-route class="card concept">
+          <div class="card-status concept"><span class="dot"></span>CONCEPT</div>
+          <div class="card-id">PRJ · 05 / RM</div>
+          <h3>Rare Metals</h3>
+          <div class="sub">NdFeB MAGNETS · CRMA</div>
+          <p>Rare-earth magnets for European EV drivetrains and wind turbines. Supply-chain de-risking under the Critical Raw Materials Act.</p>
+          <div class="card-data">
+            <span class="k">Output</span><span class="v">— kt/yr</span>
+            <span class="k">Dashboards</span><span class="v">02</span>
+            <span class="k">Supply risk</span><span class="v crit">Critical</span>
+            <span class="k">CRMA aligned</span><span class="v ok">Yes</span>
+          </div>
+          <div class="card-enter">ENTER PROGRAMME →</div>
+        </a>
+
+        <a href="/e-fuels" data-route class="card concept">
+          <div class="card-status concept"><span class="dot"></span>CONCEPT</div>
+          <div class="card-id">PRJ · 06 / PtX</div>
+          <h3>e-Fuels</h3>
+          <div class="sub">POWER-TO-X · MeOH · SAF · NH₃</div>
+          <p>Synthetic fuels from green hydrogen — e-Methanol, e-SAF and e-Ammonia for maritime, aviation and chemical offtakers.</p>
+          <div class="card-data">
+            <span class="k">Products</span><span class="v">3</span>
+            <span class="k">Dashboards</span><span class="v">03</span>
+            <span class="k">FuelEU aligned</span><span class="v ok">Yes</span>
+            <span class="k">H₂ coupling</span><span class="v">PRJ-01</span>
+          </div>
+          <div class="card-enter">ENTER PROGRAMME →</div>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- =================== FOOTER =================== -->
+    <footer class="foot">
+      <span>© 2026 ECOPRIUS ENERGY SYSTEMS · BUILD 20426.11</span>
+      <div class="right">
+        <a href="https://ecoprius.com">ecoprius.com</a>
+        <a href="/docs">Docs</a>
+        <a href="/.auth/logout">Sign out</a>
+        <span>REGION · EU-WEST</span>
+        <span class="ok">● ALL SYSTEMS NOMINAL</span>
+      </div>
+    </footer>
+
+  </main>
+
+  <script src="/assets/app.js"></script>
+</body>
+</html>

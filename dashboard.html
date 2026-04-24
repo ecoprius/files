@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="page-file" content="dashboard.html" />
+  <title>Dashboard — H2 HUB — ECOPRIUS</title>
+  <link rel="stylesheet" href="/assets/styles.css" />
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a href="/" data-route class="brand">
+        <div class="brand-mark"><span>E</span></div>
+        <div class="brand-text">
+          <div class="n">ECOPRIUS</div>
+          <div class="s">OPERATIONS CENTER · v2.4</div>
+        </div>
+      </a>
+      <nav class="top-nav">
+        <span class="status"><span class="dot"></span>AUTHENTICATED</span>
+        <span class="clock" id="clock">--:--:-- UTC</span>
+        <a href="/" data-route>Platform</a>
+        <a href="/h2hub" data-route>H2 HUB</a>
+        <a href="/.auth/logout" class="cta-btn">SIGN OUT</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <nav class="meta-row fade-in" aria-label="Breadcrumb">
+      <span class="bar"></span>
+      <a href="/" data-route>PLATFORM</a>
+      <span class="sep">/</span>
+      <a href="/h2hub" data-route>H2 HUB</a>
+      <span class="sep">/</span>
+      <span class="label" data-crumb-current>Dashboard</span>
+      <span class="rhs">SESSION · AUTHENTICATED</span>
+    </nav>
+
+    <section class="dash-stage" data-dashboard-slot>
+      <div class="dash-frame">
+        <div class="dash-inner fade-up d-1">
+          <div class="dash-id" data-slot-id>DASH · ??</div>
+          <h1 class="dash-title" data-slot-title>Loading…</h1>
+          <p class="dash-desc" data-slot-desc>
+            Dashboard view reserved for the embedded analytical tooling. Live data connects once
+            the backing service is wired in.
+          </p>
+          <a href="/h2hub" data-route class="btn-ghost">← Back to H2 HUB</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="foot">
+      <span>© 2026 ECOPRIUS · AUTHENTICATED SESSION</span>
+      <div class="right">
+        <a href="/" data-route>Platform</a>
+        <a href="/h2hub" data-route>H2 HUB</a>
+        <a href="/.auth/logout">Sign out</a>
+        <span class="ok">● SECURE · ENTRA ID</span>
+      </div>
+    </footer>
+
+  </main>
+
+  <script src="/assets/app.js"></script>
+</body>
+</html>

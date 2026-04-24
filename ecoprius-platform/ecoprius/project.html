@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="page-file" content="project.html" />
+  <title>Programme — ECOPRIUS</title>
+  <link rel="stylesheet" href="/assets/styles.css" />
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a href="/" data-route class="brand">
+        <div class="brand-mark"><span>E</span></div>
+        <div class="brand-text">
+          <div class="n">ECOPRIUS</div>
+          <div class="s">OPERATIONS CENTER · v2.4</div>
+        </div>
+      </a>
+      <nav class="top-nav">
+        <span class="status"><span class="dot"></span>SYSTEM ONLINE</span>
+        <span class="clock" id="clock">--:--:-- UTC</span>
+        <a href="/" data-route>Platform</a>
+        <a href="/.auth/login/aad" class="cta-btn">SIGN IN →</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <nav class="meta-row fade-in" aria-label="Breadcrumb">
+      <span class="bar"></span>
+      <a href="/" data-route>PLATFORM</a>
+      <span class="sep">/</span>
+      <span class="label" id="proj-crumb">PROGRAMME</span>
+      <span class="rhs">STATUS · SEE PROGRAMME REGISTRY</span>
+    </nav>
+
+    <section class="dash-stage">
+      <div class="dash-frame">
+        <div class="dash-inner fade-up d-1">
+          <div class="dash-id" id="proj-id">PRJ · ??</div>
+          <h1 class="dash-title" id="proj-title">Programme</h1>
+          <p class="dash-desc" id="proj-desc">
+            This programme is currently in early-stage scoping. Full dashboard suite will come
+            online once the concept moves to the design phase. In the meantime, see the concept
+            note on <a href="https://ecoprius.com/en/concepts" style="color:var(--cyan)">ecoprius.com/en/concepts</a>.
+          </p>
+          <a href="/" data-route class="btn-ghost">← All programmes</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="foot">
+      <span>© 2026 ECOPRIUS ENERGY SYSTEMS</span>
+      <div class="right">
+        <a href="/" data-route>Platform</a>
+        <a href="https://ecoprius.com">ecoprius.com</a>
+        <span class="ok">● ALL SYSTEMS NOMINAL</span>
+      </div>
+    </footer>
+
+  </main>
+
+  <script src="/assets/app.js"></script>
+
+  <script>
+    (() => {
+      const catalogue = {
+        '/power-grid':  { id: 'PRJ · 02 / DC',  title: 'Power Grid', desc: 'Behind-the-meter baseload power for hyperscale data centers. Capacity allocation, grid-balancing and yield modelling for gigawatt-class loads. In build — design phase.' },
+        '/carbon-loop': { id: 'PRJ · 03 / DAC', title: 'Carbon Loop', desc: 'Direct Air Capture and CO₂ utilisation. Removal credits, geological sequestration and feedstock supply for e-fuel synthesis. Concept — scoping.' },
+        '/green-steel': { id: 'PRJ · 04 / GS',  title: 'Green Steel', desc: 'Hydrogen-based direct reduced iron (H₂-DRI). Decarbonized steel for European industrial offtakers exposed to CBAM. Concept — scoping.' },
+        '/rare-metals': { id: 'PRJ · 05 / RM',  title: 'Rare Metals', desc: 'Rare-earth magnets for European EV drivetrains and wind turbines. Supply-chain de-risking under the Critical Raw Materials Act. Concept — scoping.' },
+        '/e-fuels':     { id: 'PRJ · 06 / PtX', title: 'e-Fuels', desc: 'Synthetic fuels from green hydrogen — e-Methanol, e-SAF and e-Ammonia for maritime, aviation and chemical offtakers. Concept — scoping.' }
+      };
+      const key = '/' + (location.pathname.split('/')[1] || '').toLowerCase();
+      const meta = catalogue[key] || { id: 'PRJ · ??', title: 'Unknown programme', desc: 'Programme not registered.' };
+      document.getElementById('proj-id').textContent    = meta.id;
+      document.getElementById('proj-title').textContent = meta.title;
+      document.getElementById('proj-desc').innerHTML     = meta.desc + ' In the meantime, see the concept note on <a href="https://ecoprius.com/en/concepts" style="color:var(--cyan)">ecoprius.com/en/concepts</a>.';
+      document.getElementById('proj-crumb').textContent = meta.title.toUpperCase();
+      document.title = `${meta.title} — ECOPRIUS`;
+    })();
+  </script>
+</body>
+</html>

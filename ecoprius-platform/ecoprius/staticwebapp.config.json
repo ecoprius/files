@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json.schemastore.org/staticwebapp.config.json",
+
+  "routes": [
+    { "route": "/",                "rewrite": "/index.html" },
+
+    { "route": "/h2hub",           "rewrite": "/h2hub.html" },
+    { "route": "/h2hub/*",         "rewrite": "/dashboard.html", "allowedRoles": ["authenticated"] },
+
+    { "route": "/power-grid",      "rewrite": "/project.html" },
+    { "route": "/carbon-loop",     "rewrite": "/project.html" },
+    { "route": "/green-steel",     "rewrite": "/project.html" },
+    { "route": "/rare-metals",     "rewrite": "/project.html" },
+    { "route": "/e-fuels",         "rewrite": "/project.html" },
+
+    { "route": "/login",           "redirect": "/.auth/login/aad" },
+    { "route": "/logout",          "redirect": "/.auth/logout"    }
+  ],
+
+  "navigationFallback": {
+    "rewrite": "/index.html",
+    "exclude": ["/assets/*", "*.{css,js,svg,png,jpg,jpeg,ico,webp,woff2}"]
+  },
+
+  "responseOverrides": {
+    "401": { "redirect": "/.auth/login/aad", "statusCode": 302 },
+    "404": { "rewrite": "/404.html" }
+  },
+
+  "auth": {
+    "identityProviders": {
+      "azureActiveDirectory": {
+        "registration": {
+          "openIdIssuer": "https://login.microsoftonline.com/<TENANT_ID>/v2.0",
+          "clientIdSettingName": "AAD_CLIENT_ID",
+          "clientSecretSettingName": "AAD_CLIENT_SECRET"
+        }
+      }
+    }
+  },
+
+  "globalHeaders": {
+    "X-Content-Type-Options":   "nosniff",
+    "X-Frame-Options":          "SAMEORIGIN",
+    "Referrer-Policy":          "strict-origin-when-cross-origin",
+    "Permissions-Policy":       "camera=(), microphone=(), geolocation=()",
+    "Strict-Transport-Security": "max-age=63072000; includeSubDomains; preload"
+  },
+
+  "mimeTypes": {
+    ".json": "application/json",
+    ".svg":  "image/svg+xml"
+  }
+}
